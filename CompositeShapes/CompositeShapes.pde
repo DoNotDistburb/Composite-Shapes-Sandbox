@@ -8,7 +8,7 @@ float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2;
 float mouthThick, reset;
 float measleX, measleY, measleDiameter;
-color measlesColour=#1CFC00, resetColour=#FC9C00;
+color measlesColour=#05AA8D, resetColour=#FF038A;
 //
 void setup() {
   //Geometry
@@ -46,6 +46,8 @@ ellipse(faceX, faceY, faceDiameter, faceDiameter);
 }//End setup()
 //
 void draw() {
+  color measlesColour= color(random (225),random (225));
+  //Population that changes
   measleX = random(displayWidth);
   measleY = random(displayHeight);
   measleDiameter = random(displayWidth*1/50, displayWidth*1/25);
